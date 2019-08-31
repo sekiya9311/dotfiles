@@ -13,3 +13,4 @@ set backspace=indent,eol,start
 set wildmenu
 set expandtab
 set softtabstop=2
+set vb t_vb=
