@@ -141,6 +141,7 @@ module.exports = {
     alwaysOnTop: {
       default: false,
     },
+    opacity: 0.85,
   },
 
   // a list of plugins to fetch and install from npm
@@ -153,6 +154,7 @@ module.exports = {
     "hypercwd",
     "hyper-statusline",
     "hyper-always-on-top",
+    "hyper-opacity",
   ],
 
   // in development, you can create a directory under
