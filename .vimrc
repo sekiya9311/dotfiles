@@ -14,3 +14,4 @@ set wildmenu
 set expandtab
 set softtabstop=2
 set vb t_vb=
+set clipboard+=unnamed
