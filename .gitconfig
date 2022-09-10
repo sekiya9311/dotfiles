@@ -6,4 +6,5 @@
   editor = vim
 [merge]
   ff = false
-
+[pull]
+  ff = only
