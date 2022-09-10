@@ -1,0 +1,9 @@
+[user]
+  name = sekiya9311
+  email = sekiya9311@gmail.com
+[core]
+  autocrlf = input
+  editor = vim
+[merge]
+  ff = false
+
