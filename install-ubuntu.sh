@@ -11,6 +11,7 @@ sudo apt update
 
 sudo apt install zsh
 sudo apt install tig
+sudo apt install mosh
 sudo git clone https://github.com/tfutils/tfenv.git ~/.tfenv
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
