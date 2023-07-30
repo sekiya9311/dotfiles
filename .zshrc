@@ -120,6 +120,10 @@ source $ZSH/oh-my-zsh.sh
 alias g++='g++ -O2 -Wall'
 alias ssh='mosh'
 
+autoload -U compinit
+compinit
+zstyle ':completion:*:default' menu select=1
+
 # tfenv
 export PATH="$HOME/.tfenv/bin:$PATH"
 
