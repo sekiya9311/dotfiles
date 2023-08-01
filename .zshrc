@@ -119,6 +119,8 @@ source $ZSH/oh-my-zsh.sh
 #alias
 alias g++='g++ -O2 -Wall'
 alias ssh='mosh'
+alias vi='nvim'
+alias vim='nvim'
 
 autoload -U compinit
 compinit
