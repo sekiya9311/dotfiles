@@ -11,6 +11,9 @@ autoload -U compinit
 compinit
 zstyle ':completion:*:default' menu select=1
 
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # tfenv
 export PATH="$HOME/.tfenv/bin:$PATH"
 
