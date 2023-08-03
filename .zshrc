@@ -5,6 +5,7 @@ alias g++='g++ -O2 -Wall'
 alias ssh='mosh'
 alias vi='nvim'
 alias vim='nvim'
+alias ls='exa --icons'
 
 autoload -U compinit
 compinit

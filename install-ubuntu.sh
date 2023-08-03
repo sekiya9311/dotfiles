@@ -13,6 +13,7 @@ sudo apt install zsh
 sudo apt install neovim
 sudo apt install tig
 sudo apt install mosh
+sudo apt install exa
 curl -sS https://starship.rs/install.sh | sh
 sudo git clone https://github.com/tfutils/tfenv.git ~/.tfenv
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
