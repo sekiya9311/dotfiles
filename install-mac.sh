@@ -20,8 +20,8 @@ brew install azure-cli
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
 
 brew tap homebrew/cask-fonts
-brew install font-hackgen
-brew install font-hackgen-nerd
+brew install font-jetbrains-mono
+brew install font-jetbrains-mono-nerd-font
 
 which zsh | sudo tee -a /etc/shells
 chsh -s $(which zsh)
