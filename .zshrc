@@ -7,8 +7,14 @@ alias vi='nvim'
 alias vim='nvim'
 alias ls='exa --icons'
 
-autoload -U compinit
-compinit
+autoload -Uz compinit && compinit
+# https://qiita.com/watertight/items/2454f3e9e43ef647eb6b
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' '+m:{[:upper:]}={[:lower:]}'
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
+zstyle ':completion:*' matcher-list '' 'm:{[:lower:]}={[:upper:]}' '+m:{[:upper:]}={[:lower:]}'
+
 zstyle ':completion:*:default' menu select=1
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

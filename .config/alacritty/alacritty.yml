@@ -1,0 +1,10 @@
+font:
+  normal:
+    family: Hackgen Console NF
+    style: Regular
+
+  bold:
+    family: Hackgen Console NF
+    style: Bold
+
+  size: 12

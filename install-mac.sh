@@ -13,10 +13,15 @@ brew install zsh
 brew install neovim
 brew install tig
 brew install mosh
+brew install tmux
 curl -sS https://starship.rs/install.sh | sh
 brew install tfenv
 brew install azure-cli
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+
+brew tap homebrew/cask-fonts
+brew install font-hackgen
+brew install font-hackgen-nerd
 
 which zsh | sudo tee -a /etc/shells
 chsh -s $(which zsh)

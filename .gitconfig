@@ -3,7 +3,7 @@
   email = sekiya9311@gmail.com
 [core]
   autocrlf = input
-  editor = vim
+  editor = nvim
 [merge]
   ff = false
 [pull]
