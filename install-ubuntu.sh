@@ -30,6 +30,9 @@ ln -sf ${CURRENT}/.tmux.conf $HOME/.tmux.conf
 ln -sf ${CURRENT}/.vimrc $HOME/.vimrc
 ln -sf ${CURRENT}/.zshrc $HOME/zshrc
 if [ ! -e $HOME/.config ]; then mkdir $HOME/.config; fi
+if [ ! -e $HOME/.config/nvim ]; then mkdir $HOME/.config/nvim; fi
 ln -sf ${CURRENT}/.config/starship.toml $HOME/.config/starship.toml
-ln -sf ${CURRENT}/.config/alacritty $HOME/.config/alacritty
-ln -sf ${CURRENT}/.config/nvim $HOME/.config/nvim
+ln -sf ${CURRENT}/.config/alacritty $HOME/.config
+ln -sf ${CURRENT}/.config/nvim/init.vim $HOME/.config/nvim/init.vim
+ln -sf ${CURRENT}/.config/nvim/lua $HOME/.config/nvim
+
