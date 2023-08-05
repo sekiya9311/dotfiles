@@ -1,11 +1,6 @@
 #!/bin/sh
 
-cp .gitconfig ../
-cp .tigrc ../
-cp .tmux.conf ../
-cp .vimrc ../
-cp .zshrc ../
-cp -r .config ../
+CURRENT=$(cd $(dirname $0); pwd)
 
 sudo apt update
 
@@ -29,10 +24,12 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.zsh/zsh-sy
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
-cp .gitconfig ../
-cp .tigrc ../
-cp .tmux.conf ../
-cp .vimrc ../
-cp .zshrc ../
-cp -r .config ../
-
+ln -sf ${CURRENT}/.gitconfig $HOME/.gitconfig
+ln -sf ${CURRENT}/.tigrc $HOME/.tigrc
+ln -sf ${CURRENT}/.tmux.conf $HOME/.tmux.conf
+ln -sf ${CURRENT}/.vimrc $HOME/.vimrc
+ln -sf ${CURRENT}/.zshrc $HOME/zshrc
+if [ ! -e $HOME/.config ]; then mkdir $HOME/.config; fi
+ln -sf ${CURRENT}/.config/starship.toml $HOME/.config/starship.toml
+ln -sf ${CURRENT}/.config/alacritty $HOME/.config/alacritty
+ln -sf ${CURRENT}/.config/nvim $HOME/.config/nvim
