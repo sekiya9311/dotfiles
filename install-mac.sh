@@ -12,6 +12,7 @@ cp -r .config ../
 brew install zsh
 brew install neovim
 brew install tig
+brew install fd
 brew install mosh
 brew install tmux
 curl -sS https://starship.rs/install.sh | sh
