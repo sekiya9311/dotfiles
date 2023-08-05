@@ -11,3 +11,5 @@ font:
     style: Italic
 
   size: 12
+env:
+  TERM: alacritty
