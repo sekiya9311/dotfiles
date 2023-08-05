@@ -12,6 +12,7 @@ sudo apt update
 sudo apt install zsh
 sudo apt install neovim
 sudo apt install tig
+sudo apt install fd-find
 sudo apt install mosh
 sudo apt install exa
 curl -sS https://starship.rs/install.sh | sh
