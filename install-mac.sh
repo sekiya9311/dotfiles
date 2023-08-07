@@ -1,11 +1,6 @@
 #!/bin/sh
 
-cp .gitconfig ../
-cp .tigrc ../
-cp .tmux.conf ../
-cp .vimrc ../
-cp .zshrc ../
-cp -r .config ../
+CURRENT=$(cd $(dirname $0); pwd)
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -33,10 +28,14 @@ chsh -s $(which zsh)
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
- cp .gitconfig ../
- cp .tigrc ../
- cp .tmux.conf ../
- cp .vimrc ../
- cp .zshrc ../
- cp -r .config ../
+ln -sf ${CURRENT}/.gitconfig $HOME/.gitconfig
+ln -sf ${CURRENT}/.tigrc $HOME/.tigrc
+ln -sf ${CURRENT}/.tmux.conf $HOME/.tmux.conf
+ln -sf ${CURRENT}/.zshrc $HOME/.zshrc
+if [ ! -e $HOME/.config ]; then mkdir $HOME/.config; fi
+if [ ! -e $HOME/.config/nvim ]; then mkdir $HOME/.config/nvim; fi
+ln -sf ${CURRENT}/.config/starship.toml $HOME/.config/starship.toml
+ln -sf ${CURRENT}/.config/alacritty $HOME/.config
+ln -sf ${CURRENT}/.config/nvim/init.vim $HOME/.config/nvim/init.vim
+ln -sf ${CURRENT}/.config/nvim/lua $HOME/.config/nvim
 
