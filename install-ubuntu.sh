@@ -27,8 +27,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 ln -sf ${CURRENT}/.gitconfig $HOME/.gitconfig
 ln -sf ${CURRENT}/.tigrc $HOME/.tigrc
 ln -sf ${CURRENT}/.tmux.conf $HOME/.tmux.conf
-ln -sf ${CURRENT}/.vimrc $HOME/.vimrc
-ln -sf ${CURRENT}/.zshrc $HOME/zshrc
+ln -sf ${CURRENT}/.zshrc $HOME/.zshrc
 if [ ! -e $HOME/.config ]; then mkdir $HOME/.config; fi
 if [ ! -e $HOME/.config/nvim ]; then mkdir $HOME/.config/nvim; fi
 ln -sf ${CURRENT}/.config/starship.toml $HOME/.config/starship.toml
