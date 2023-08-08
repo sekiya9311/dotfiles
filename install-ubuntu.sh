@@ -5,6 +5,8 @@ CURRENT=$(cd $(dirname $0); pwd)
 sudo apt update
 
 sudo apt install zsh
+sudo apt install zip
+sudo apt install unzip
 sudo apt install neovim
 sudo apt install tig
 sudo apt install fd-find
