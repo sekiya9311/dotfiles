@@ -2,7 +2,6 @@ export LANG=ja_JP.UTF-8
 
 #alias
 alias g++='g++ -O2 -Wall'
-alias ssh='mosh'
 alias vi='nvim'
 alias vim='nvim'
 alias ls='exa --icons'
