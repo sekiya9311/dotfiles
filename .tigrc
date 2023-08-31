@@ -1,2 +1,3 @@
 bind main ! !?git revert %(commit)
+set main-view = id date author commit-title:graph=yes,refs=yes
 
