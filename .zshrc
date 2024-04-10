@@ -4,7 +4,7 @@ export LANG=ja_JP.UTF-8
 alias g++='g++ -O2 -Wall'
 alias vi='nvim'
 alias vim='nvim'
-alias ls='exa --icons'
+alias ls='eza --icons'
 
 autoload -Uz compinit && compinit
 # https://qiita.com/watertight/items/2454f3e9e43ef647eb6b
