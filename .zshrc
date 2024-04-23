@@ -5,6 +5,7 @@ alias g++='g++ -O2 -Wall'
 alias vi='nvim'
 alias vim='nvim'
 alias ls='eza --icons'
+alias cat='bat'
 
 autoload -Uz compinit && compinit
 # https://qiita.com/watertight/items/2454f3e9e43ef647eb6b

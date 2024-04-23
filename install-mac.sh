@@ -12,6 +12,7 @@ brew install mosh
 brew install tmux
 brew install ncurses
 brew install eza
+brew install bat
 /usr/local/opt/ncurses/bin/infocmp tmux-256color > ~/tmux-256color.info
 tic -xe tmux-256color ~/tmux-256color.info
 curl -sS https://starship.rs/install.sh | sh
