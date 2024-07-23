@@ -1,7 +1,7 @@
 [user]
   name = sekiya9311
   email = sekiya9311@gmail.com
-	signingkey = 3F4876095D17F6DC
+  signingkey = 3F4876095D17F6DC
 [core]
   autocrlf = input
   editor = nvim
@@ -13,4 +13,4 @@
   default = current
   autoSetupRemote = true
 [commit]
-	gpgsign = true
+  gpgsign = true
